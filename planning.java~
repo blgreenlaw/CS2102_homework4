@@ -1,0 +1,25 @@
+import java.util.LinkedList;
+class Planning {
+  
+  //method for rainfall, consumes a linkedlist<double>
+  double rainfall(LinkedList<Double> dailyRainfallReadings) {
+    double sumNonNegative = 0;
+    int numElt = 0;
+    for (Double drr : dailyRainfallReadings) {
+      if(drr == -999) {
+        break;
+      }
+      else
+        if (drr >= 0) {
+        sumNonNegative += drr;
+        numElt += 1;
+      }
+    }
+    if (numElt == 0) {
+      return -1;
+    } else {
+      return sumNonNegative;
+    }
+  }
+  //method for maxTripleLength, consumes a linkedlist<String>
+}

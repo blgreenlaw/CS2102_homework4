@@ -1,0 +1,9 @@
+import  tester.* ;
+
+class Main {
+  statics xamples E = new Examples ();
+  
+  public statics void main(String[] args) {
+    Tester.run(E) ;
+  }
+}

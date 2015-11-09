@@ -1,0 +1,6 @@
+//methods for testing
+class HeapTester {
+  
+boolean addEltTester(Heap Horig, int elt, Heap Hadded) {
+    
+  }
